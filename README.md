@@ -6,7 +6,7 @@ license: mit
 
 ## Introduction
 
-LipCoordNet is an advanced neural network model designed for accurate lip reading by incorporating lip landmark coordinates as a supplementary input to the traditional image sequence input. This enhancement to the original LipNet architecture aims to improve the precision of sentence predictions by providing additional geometric context to the model.
+Lipreading is an advanced neural network model designed for accurate lip reading by incorporating lip landmark coordinates as a supplementary input to the traditional image sequence input. This enhancement to the original LipNet architecture aims to improve the precision of sentence predictions by providing additional geometric context to the model.
 
 ## Features
 
@@ -51,7 +51,7 @@ LipCoordNet is an advanced neural network model designed for accurate lip readin
 
 ### Usage
 
-To train the LipCoordNet model with your dataset, first update the options.py file with the appropriate paths to your dataset and pretrained weights (comment out the weights if you want to start from scratch). Then, run the following command:
+To train the LipReading model with your dataset, first update the options.py file with the appropriate paths to your dataset and pretrained weights (comment out the weights if you want to start from scratch). Then, run the following command:
 
 ```bash
 python train.py
@@ -67,19 +67,19 @@ note: ffmpeg is required to convert video to image sequence and run the inferenc
 
 ## Model Architecture
 
-![LipCoordNet model architecture](./assets/LipCoordNet_model_architecture.png)
+![LipReading model architecture](./assets/LipCoordNet_model_architecture.png)
 
 ## Training
 
-This model is built on top of the [LipNet-Pytorch](https://github.com/VIPL-Audio-Visual-Speech-Understanding/LipNet-PyTorch) project on GitHub. The training process if similar to the original LipNet model, with the addition of landmark coordinates as a supplementary input. We used the pretrained weights from the original LipNet model as a starting point for training our model, froze the weights for the original LipNet layers, and trained the new layers for the landmark coordinates.
+This model is built on top of the [LipReading](https://github.com/wissemkarous/Lip-reading-Final-Year-Project) project on GitHub. The training process if similar to the original LipNet model, with the addition of landmark coordinates as a supplementary input. We used the pretrained weights from the original LipNet model as a starting point for training our model, froze the weights for the original LipNet layers, and trained the new layers for the landmark coordinates.
 
-The dataset used to train this model is the [EGCLLC dataset](https://huggingface.co/datasets/SilentSpeak/EGCLLC). The dataset is not included in this repository, but can be downloaded from the link above.
+The dataset used to train this model is the [Lipreading dataset](https://huggingface.co/datasets/wissemkarous/lipreading). The dataset is not included in this repository, but can be downloaded from the link above.
 
-Total training time: 2 days
+Total training time: 12 h
 Total epochs: 51
-Training hardware: NVIDIA GeForce RTX 3080 12GB
+Training hardware: NVIDIA GeForce RTX 3050 6GB
 
-![LipCoordNet training curves](./assets/training_graphs.png)
+![LipReading training curves](./assets/training_graphs.png)
 
 For an interactive view of the training curves, please refer to the tensorboard logs in the `runs` directory.
 Use this command to view the logs:
@@ -98,12 +98,7 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-This model, LipCoordNet, has been developed with reference to the LipNet-PyTorch implementation available at [VIPL-Audio-Visual-Speech-Understanding](https://github.com/VIPL-Audio-Visual-Speech-Understanding/LipNet-PyTorch). We extend our gratitude to the contributors of this repository for providing a solid foundation and insightful examples that greatly facilitated the development of our enhanced lip reading model. Their work has been instrumental in advancing the field of audio-visual speech understanding and has provided the community with valuable resources to build upon.
-
-Alvarez Casado, C., Bordallo Lopez, M. Real-time face alignment: evaluation methods, training strategies and implementation optimization. Springer Journal of Real-time image processing, 2021
-
-Assael, Y., Shillingford, B., Whiteson, S., & Freitas, N. (2017). LipNet: End-to-End Sentence-level Lipreading. GPU Technology Conference.
-
+This model, LipReading, has been developed for academic purposes as a final year project. Special thanks to everyone who provided assistance and all references
 ## Contact
 
 Project Link: https://github.com/ffeew/LipCoordNet
