@@ -12,14 +12,14 @@ Lipreading is an advanced neural network model designed for accurate lip reading
 
 - **Dual Input System**: Utilizes both raw image sequences and corresponding lip landmark coordinates for improved context.
 - **Enhanced Spatial Resolution**: Improved spatial analysis of lip movements through detailed landmark tracking.
-- **State-of-the-Art Performance**: Outperforms the original LipNet, as well as VIPL's [PyTorch implementation of LipNet](https://github.com/VIPL-Audio-Visual-Speech-Understanding/LipNet-PyTorch).
+- **State-of-the-Art Performance**: Outperforms the original Lipreading, as well as  LipReading-final-year-project[ Implementation of LipReading](https://github.com/wissemkarous/Lip-reading-Final-Year-Project).
   | Scenario | Image Size (W x H) | CER | WER |
   | :-------------------------------: | :----------------: | :--: | :---: |
   | Unseen speakers (Original) | 100 x 50 | 6.7% | 13.6% |
   | Overlapped speakers (Original) | 100 x 50 | 2.0% | 5.6% |
-  | Unseen speakers (VIPL LipNet) | 128 x 64 | 6.7% | 13.3% |
-  | Overlapped speakers (VIPL LipNet) | 128 x 64 | 1.9% | 4.6% |
-  | Overlapped speakers (LipCoordNet) | 128 x 64 | 0.6% | 1.7% |
+  | Unseen speakers (LipReading-final-year-project) | 128 x 64 | 6.7% | 13.3% |
+  | Overlapped speakers ( LipReading-final-year-project) | 128 x 64 | 1.9% | 4.6% |
+  | Overlapped speakers (LipReading) | 128 x 64 | 0.6% | 1.7% |
 
 ## Getting Started
 
