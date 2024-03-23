@@ -45,7 +45,7 @@ Lipreading is an advanced neural network model designed for accurate lip reading
 
 2. Navigate to the project directory:
    ```bash
-   cd LipCoordNet
+   cd LIPREAD
    ```
 3. Install the required dependencies:
    ```bash
@@ -74,7 +74,7 @@ note: ffmpeg is required to convert video to image sequence and run the inferenc
 
 ## Training
 
-This model is built on top of the [LipReading](https://github.com/wissemkarous/Lip-reading-Final-Year-Project) project on GitHub. The training process if similar to the original LipNet model, with the addition of landmark coordinates as a supplementary input. We used the pretrained weights from the original LipNet model as a starting point for training our model, froze the weights for the original LipNet layers, and trained the new layers for the landmark coordinates.
+This model is built on top of the [LipReading](https://github.com/wissemkarous/Lip-reading-Final-Year-Project) project on GitHub. The training process if similar to the original LipReading model, with the addition of landmark coordinates as a supplementary input. We used the pretrained weights from the original LipReading model as a starting point for training our model, froze the weights for the original LipNet layers, and trained the new layers for the landmark coordinates.
 
 The dataset used to train this model is the [Lipreading dataset](https://huggingface.co/datasets/wissemkarous/lipreading). The dataset is not included in this repository, but can be downloaded from the link above.
 
