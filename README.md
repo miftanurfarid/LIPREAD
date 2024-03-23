@@ -1,5 +1,8 @@
 ---
 license: mit
+metrics:
+- wer
+- cer
 ---
 
 # LipCoordNet: Enhanced Lip Reading with Landmark Coordinates
@@ -37,7 +40,7 @@ Lipreading is an advanced neural network model designed for accurate lip reading
 1. Clone the repository:
 
    ```bash
-   git clone https://huggingface.co/SilentSpeak/LipCoordNet
+   git clone https://huggingface.co/wissemkarous/LIPREAD
    ```
 
 2. Navigate to the project directory:
