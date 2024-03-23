@@ -104,4 +104,4 @@ This project is licensed under the MIT License.
 This model, LipReading, has been developed for academic purposes as a final year project. Special thanks to everyone who provided assistance and all references
 ## Contact
 
-Project Link: https://github.com/ffeew/LipCoordNet
+Project Link: https://github.com/wissemkarous/End-of-year-Project
