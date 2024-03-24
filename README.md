@@ -5,7 +5,7 @@ metrics:
 - cer
 ---
 
-# LipCoordNet: Enhanced Lip Reading with Landmark Coordinates
+# LipReading: Enhanced Lip Reading with Landmark Coordinates
 
 ## Introduction
 
