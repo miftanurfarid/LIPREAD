@@ -261,14 +261,14 @@ def output_video(p, txt, output_path):
         img = cv2.imread(os.path.join(p, file))
         h, w, _ = img.shape
         img = cv2.putText(
-            img, line, (w // 8, 11 * h // 12), font, 1.2, (0, 0, 0), 3, cv2.LINE_AA
+            img, line, (w // 8, 11 * h // 12), font, 0.7, (0, 0, 0), 3, cv2.LINE_AA
         )
         img = cv2.putText(
             img,
             line,
             (w // 8, 11 * h // 12),
             font,
-            1.2,
+            0.7,
             (255, 255, 255),
             0,
             cv2.LINE_AA,
@@ -326,7 +326,7 @@ def main():
 
     # load model
     model = LipCoordNet()
-    model.load_state_dict(torch.load(args.weights))
+    model.load_state_dict(torch.load(args.weights, map_location=torch.device(device)))
     model = model.to(device)
     model.eval()
     detector = dlib.get_frontal_face_detector()
