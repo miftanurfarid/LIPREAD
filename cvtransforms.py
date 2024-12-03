@@ -1,6 +1,5 @@
 import random
 
-
 def HorizontalFlip(batch_img, p=0.5):
     # (T, H, W, C)
     if random.random() > p:
